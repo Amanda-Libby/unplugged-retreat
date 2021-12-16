@@ -125,7 +125,7 @@ h4 {
   margin: 20px 0;
 }
 
-p {
+p { /* look at this one */
   font-size: 0.875em;
   line-height: 1.285;
 }
@@ -171,7 +171,7 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
-header figure {
+header figure { /* look at this one */
   width: 60%;
   display: flex;
   justify-content: center;
@@ -246,7 +246,7 @@ footer .copyright {
 
 /* Hero Area */
 
-.hero-area {
+.hero-area { /* look at this one */
   background-image: url('img/jake-melara-30679-unsplash.jpg');
   background-size: cover;
   background-position: center;
@@ -256,7 +256,7 @@ footer .copyright {
   align-items: row wrap; 
 }
 
-.hereo-area h1 {
+.hereo-area h1 { /* look at this one */
   font-size: 2.25em;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -265,7 +265,7 @@ footer .copyright {
 
 /* Aside */
 
-aside {
+aside { /* look at this one */
   background-color: #527158;
   display: flex;
   justify-content: center;
@@ -273,11 +273,11 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .form {
+aside .form { /* look at this one */
   margin-top: 30px;
 }
 
-input[type=text] {
+input[type=text] { /* look at this one */
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
@@ -285,7 +285,7 @@ input[type=text] {
   padding: 1em;
 }
 
-input[type=button] {
+input[type=button] { /* look at this one */
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
@@ -311,11 +311,11 @@ input[type=button] {
   align-items: row wrap;
 }
 
-.features h2 {
+.features h2 { /* look at this one */
   margin-bottom: 60px;
 }
 
-.features article {
+.features article { /* look at this one */
   width: 63%;
   margin: 30px 0;
 }
@@ -332,7 +332,7 @@ input[type=button] {
   margin: 0;
 }
 
-.features i {
+.features i { /* look at this one */
 	font-size: 3.75em;
   margin-bottom: 40px;
 }
@@ -346,12 +346,12 @@ input[type=button] {
   align-items: row wrap;
 }
 
-.reviews h2 {
+.reviews h2 { /* look at this one */
   margin-bottom: 40px;
   line-height: 1;
 }
 
-.reviews h3 {
+.reviews h3 { /* look at this one */
   width: 55%;
   margin: 20px 0;
 }
@@ -359,7 +359,7 @@ input[type=button] {
 
 /* ------ About Page ------ */
 
-.mission {
+.mission { /* look at this one */
   background-color: #527158;
   display: flex;
   justify-content: center;
@@ -368,7 +368,7 @@ input[type=button] {
 }
 
 .contact-section {
-  background-color: #2a423a;
+  background-color: #2a423a; /* look at this one */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +379,7 @@ input[type=button] {
   margin: 0;
 }
 
-.map figure {
+.map figure { /* look at this one */
   width: 100%;
   height: 0; 
   padding-bottom: 125%; 
@@ -387,7 +387,7 @@ input[type=button] {
   position: relative;
 }
 
-.map iframe {
+.map iframe { /* look at this one */
   width: 100%;
   height: 100%;
   position: absolute; 
@@ -413,7 +413,7 @@ input[type=button] {
   margin: 50px 0 0 0;
 }
 
-.faq h2 {
+.faq h2 { /* look at this one */
   margin-bottom: 40px;
   line-height: 1;
 }
@@ -517,12 +517,12 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  h2 {
+  h2 { /* look at this one */
     font-size: 2.25em;
     line-height: 1.333;
   }
 
-  h3 {
+  h3 { /* look at this one */
     font-size: 1.5em;
     line-height: 1.25;
   }
@@ -538,7 +538,7 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  header figure {
+  header figure { /* look at this one */
     width: 30%;
   }
 
@@ -560,7 +560,7 @@ input[type=button] {
     min-height: 600px;
   }
 
-  .hero-area h1 {
+  .hero-area h1 { /* look at this one */
     font-size: 3em;
     line-height: 1;
     margin: 0;
@@ -581,8 +581,8 @@ input[type=button] {
 
   /* Features */
   
-  .features h2 {
-    margin-bottom: 20px;
+  .features h2 { /* look at this one */
+    margin-bottom: 20px; 
   }
   
   .features article {
@@ -611,7 +611,7 @@ input[type=button] {
     width: 49%;
   }
 
-  .reviews h3 {
+  .reviews h3 { /* look at this one */
     width: 75%;
     margin: 0;
   }
@@ -671,6 +671,39 @@ input[type=button] {
 
   .contact-content h4 {
     font-size: 1.5em;
+  }
+
+  .map figure { /* look at this one */
+    width: 100%;
+    height: 0; 
+    padding-bottom: 100%; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map iframe { /* look at this one */
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+  } 
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
   }
 
   /* FAQ Page */
@@ -745,6 +778,43 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+  }
+
+  /* Ask about the responsive map since the video didn't go over this.
+
+  /*
+  .map figure {  look at this one 
+    width: 100%;
+    height: 0; 
+    padding-bottom: 100%; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map iframe {  look at this one 
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+  */
+
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+  } 
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
   }
 
   /* FAQ Page */

@@ -130,6 +130,14 @@ p {
   line-height: 1.285;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -139,13 +147,6 @@ address {
   margin: 50px;
 }
 
-img {
-  width: 100%;
-}
-
-figure {
-  margin: 0;
-}
 /* ------ Base Header - Footer ------ */
 
 header, 
@@ -241,21 +242,18 @@ footer .copyright {
 }
 
 
-
-/* ------ Mobile Styles ------- */
-
-/* HOME PAGE */
+/* ------ Mobile Styles - Homepage ------- */
 
 /* Hero Area */
 
 .hero-area {
-  display: flex;
-  justify-content: center;
-  align-items: row wrap;
   background-image: url('img/jake-melara-30679-unsplash.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: row wrap; 
 }
 
 .hereo-area h1 {
@@ -284,6 +282,7 @@ input[type=text] {
   width: 100%;
   color: #2a423a;
   font-style: italic;
+  padding: 1em;
 }
 
 input[type=button] {
@@ -304,6 +303,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: row wrap;
@@ -358,6 +360,7 @@ input[type=button] {
 /* ------ About Page ------ */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,6 +368,7 @@ input[type=button] {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,6 +398,7 @@ input[type=button] {
 /* ------ FAQ Page ------- */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,6 +415,7 @@ input[type=button] {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
@@ -511,6 +517,16 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   /* Header */
   header {
     justify-content: space-around;
@@ -520,6 +536,10 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -534,14 +554,17 @@ input[type=button] {
     display: none;
   }
 
-  header figure {
-    width: 30%;
-    display: flex;
-    justify-content: left;
-    align-items: left;
+  /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
   }
 
-  /* Hero Area */
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /*  Aside */
   aside .content-wrapper {
@@ -557,6 +580,11 @@ input[type=button] {
   }
 
   /* Features */
+  
+  .features h2 {
+    margin-bottom: 20px;
+  }
+  
   .features article {
     display: flex;
     justify-content: center;
@@ -566,7 +594,7 @@ input[type=button] {
   }
 
   .features .features-items-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -575,8 +603,17 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  .reviews article div {
-    width: 40%;
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure, .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -585,22 +622,28 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .content {
     margin-bottom: 0;
   }
 
-  footer .copyright {
-    width: 100%;
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
   }
 
-  .faq-content {
-    flex-basis: 200px;
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .copyright {
+    width: 100%;
   }
 
   /* About Page */
@@ -626,6 +669,10 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /* FAQ Page */
 
   .faq .content-wrapper {
@@ -640,14 +687,30 @@ input[type=button] {
     width: 100%;
   }
 
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  /* I STOPPED HERE SINCE I NEED TO ACTUALLY FIND ALL THE CSS STYLES MYSELF!!!!!
 
   /* Hero */
   .hero-area h1 {

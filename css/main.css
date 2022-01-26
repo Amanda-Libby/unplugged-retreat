@@ -229,12 +229,17 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.5em;
 }
 
 footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 footer .copyright {
@@ -247,7 +252,7 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area { /* look at this one */
-  background-image: url('img/jake-melara-30679-unsplash.jpg');
+  background-image: url('../img/jake-melara-30679-unsplash.jpg');
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -257,7 +262,7 @@ footer .copyright {
 }
 
 .hereo-area h1 { /* look at this one */
-  font-size: 2.25em;
+  font-size: 2.25em; 
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 500;
   line-height: 1.2;
@@ -274,7 +279,7 @@ aside { /* look at this one */
 }
 
 aside .form { /* look at this one */
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 input[type=text] { /* look at this one */
@@ -303,7 +308,7 @@ input[type=button] { /* look at this one */
 /* Features */
 
 .features {
-  background: url('../img/unplugged-retreat-features.jpg');
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -312,7 +317,7 @@ input[type=button] { /* look at this one */
 }
 
 .features h2 { /* look at this one */
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .features article { /* look at this one */
@@ -333,7 +338,7 @@ input[type=button] { /* look at this one */
 }
 
 .features i { /* look at this one */
-	font-size: 3.75em;
+	font-size: 4em;
   margin-bottom: 40px;
 }
 
@@ -347,7 +352,7 @@ input[type=button] { /* look at this one */
 }
 
 .reviews h2 { /* look at this one */
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   line-height: 1;
 }
 
@@ -367,6 +372,10 @@ input[type=button] { /* look at this one */
   flex-flow: row wrap;
 }
 
+.content-wrapper h2 {
+  margin-top: -10px;
+}
+
 .contact-section {
   background-color: #2a423a; /* look at this one */
   display: flex;
@@ -376,7 +385,7 @@ input[type=button] { /* look at this one */
 }
 
 .contact-content {
-  margin: 0;
+  margin-top: -10px;
 }
 
 .map figure { /* look at this one */
@@ -416,10 +425,12 @@ input[type=button] { /* look at this one */
 .faq h2 { /* look at this one */
   margin-bottom: 40px;
   line-height: 1;
+  text-align: none;
+  width: 100%;
 }
 
 .faq-content {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* ==========================================================================
@@ -543,11 +554,13 @@ input[type=button] { /* look at this one */
   }
 
   header nav {
-    width: 20%;
+    width: 30%;
   }
 
   header nav ul {
     justify-content: space-between;
+    padding-left: 20px;
+    width: 100%;
   }
 
   .header-divider {
@@ -568,10 +581,10 @@ input[type=button] { /* look at this one */
 
   /*  Aside */
   aside .content-wrapper {
-    margin: 50px 0;
+    margin: 30px 0;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row;
   }
 
   aside .content-wrapper .form-description, aside .content-wrapper .form {
@@ -593,28 +606,37 @@ input[type=button] { /* look at this one */
     flex-basis: 50%;
   }
 
+  .features .fontawesome-icon {
+    font-size: 1em;
+  }
+
   .features .features-items-description {
     width: 62%;
   }
 
   /* Reviews */
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .reviews h2 {
     width: 85%;
   }
-
-  .reviews article figure, .reviews article div {
-    width: 49%;
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+  }
+  .reviews img {
+    width: 50%;
   }
 
-  .reviews h3 { /* look at this one */
+  .reviews article div {
+    width: 50%;
+    padding-left: 10px;
+  }
+
+  .reviews h3 { 
     width: 75%;
     margin: 0;
   }
+  
 
   /* Footer */
   footer .content-wrapper {
@@ -625,7 +647,6 @@ input[type=button] { /* look at this one */
   footer .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: row;
   }
 
@@ -646,6 +667,15 @@ input[type=button] { /* look at this one */
     width: 100%;
   }
 
+  footer .social {
+    width: 40%;
+  }
+
+  footer .social-icons {
+    font-size: 1.5em;
+    justify-content: space-between;
+  }
+
   /* About Page */
 
   .mission-content {
@@ -655,12 +685,17 @@ input[type=button] { /* look at this one */
     padding-top: 20px;
   }
 
+  .mission .content-wrapper {
+    font-size: large;
+  }
+
   .mission-content p {
     width: 45%;
   }
 
   .contact-section .contact-wrapper h2 {
     width: 80%;
+    font-size: large;
   }
 
   .contact-content {
@@ -674,42 +709,18 @@ input[type=button] { /* look at this one */
   }
 
   .map figure { /* look at this one */
-    width: 100%;
-    height: 0; 
-    padding-bottom: 100%; 
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .map iframe { /* look at this one */
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-  }
-
-  .embed-container { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
-  } 
-  .embed-container iframe,
-  .embed-container object,
-  .embed-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
+    padding-bottom: 45.5%; 
   }
 
   /* FAQ Page */
 
   .faq .content-wrapper {
     justify-content: space-between;
+  }
+
+  .faq .content-wrapper h2 {
+    margin-top: 30px;
+    font-size: 2.5em;
   }
 
   .faq-content {
@@ -743,7 +754,9 @@ input[type=button] { /* look at this one */
     font-size: 2.25em;
   }
 
-  /* I STOPPED HERE SINCE I NEED TO ACTUALLY FIND ALL THE CSS STYLES MYSELF!!!!!
+  header nav {
+    width: 20%;
+  }
 
   /* Hero */
   .hero-area h1 {
@@ -760,6 +773,14 @@ input[type=button] { /* look at this one */
     width: 30%;
   }
 
+  aside .content-wrapper h3 {
+    font-size: 2em;
+  }
+
+  aside .content-wrapper p {
+    font-size: 1em;
+  }
+
   /* Features */
   .features h2 {
     width: 90%;
@@ -771,56 +792,85 @@ input[type=button] { /* look at this one */
 
   /* Reviews */
   .reviews article div {
-    width: 42%;
+    /* width: 42%; */
+    width: 60%
+  }
+
+  .reviews .content-wrapper h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews .content-wrapper div {
+    padding-left: 40px;
+  }
+
+  .reviews .content-wrapper h3 {
+    font-size: 1.8em;
+  }
+
+  .reviews .content-wrapper p {
+    font-size: 1.3em;
+  }
+
+  footer h4 {
+    font-size: 2em;
+  }
+
+  footer p {
+    font-size: 1.3em;
   }
 
   /* About Page */
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 2.5em;
   }
 
-  /* Ask about the responsive map since the video didn't go over this.
-
-  /*
-  .map figure {  look at this one 
-    width: 100%;
-    height: 0; 
-    padding-bottom: 100%; 
-    overflow: hidden;
-    position: relative;
+  .mission p {
+    font-size: 1em;
+    padding-top: -40px;
   }
-  
-  .map iframe {  look at this one 
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-  }
-  */
 
-  .embed-container { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
-  } 
-  .embed-container iframe,
-  .embed-container object,
-  .embed-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
+  .map figure {   
+    padding-bottom: 37.5%; 
+  }
+
+  .contact-section h2 {
+    font-size: 4em;
+  }
+
+  .contact-section h4 {
+    font-size: 1.7em;
+  }
+
+  .contact-section p {
+    font-size: 1em;
   }
 
   /* FAQ Page */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
+
+  .faq h4, .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+
+  /* Footer */
+
+  footer .social {
+    width: 30%;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
 }
 
 /* ==========================================================================
